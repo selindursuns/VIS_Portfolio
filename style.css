@@ -1,0 +1,239 @@
+
+body {
+    /* Set line height to 1.5 times the font size
+       and use the OS’s UI font as the website font
+     */
+    /* font: 100%/1.5 system-ui; */
+    /* color: black;
+    font-size: 1.5vw;
+    font-family: "Rubik", sans-serif; */
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure body takes up at least the viewport height */
+    box-sizing: border-box;
+ 
+    
+   }
+
+   .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center sidebar content horizontally */
+    justify-content: center; /* Center sidebar content vertically */
+    padding: 20px;
+    width: 100%; 
+    max-width: 700px; 
+}
+
+   header, nav {
+    display: fixed;
+    padding: 0px;
+    margin: 20px; /* Reset margins and paddings */
+}
+
+.fit-picture, .text-box {
+    width: 400px; 
+    margin-bottom: 20px; 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center main content horizontally */
+    justify-content: center; /* Center main content vertically */
+    padding: 20px;
+    width: 100%; /* Use full width for smaller screens, adjust as needed */
+    max-width: 800px; 
+}
+
+
+   .fit-picture {
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border: 0px solid transparent; 
+    cursor: crosshair;
+  }
+  
+  .fit-picture:hover {
+    transform: scale(1.05); /* Slightly enlarges the image */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Adds a shadow around the image */
+    border: 0px solid #fff; /* Optional: changes border color on hover */
+    cursor: crosshair;
+}
+
+
+.text-box {
+    width: 100%; /* Allows text box to fill its container */
+    max-width: 400px; /* Matches the image width */
+    padding: 10px;
+    text-align: center; /* Centers text within the text box */
+}
+
+  form.form-example {
+    display: table;
+  }
+  
+  div.form-example {
+    display: table-row;
+  }
+  
+  label,
+  input {
+    display: table-cell;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    padding-right: 10px;
+  }
+
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*  navigation bar */
+
+nav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    justify-content: center; /* Center items horizontally */
+    padding: 10px 0; /* Add padding on top and bottom */
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    float: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 10px; 
+}
+
+
+nav a:hover {
+    color: black;
+    transform: scale(1.06);
+    font-weight: bold;
+    
+
+
+}
+
+
+nav a.active {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+header a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 28px;
+    color: #4100e6;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    cursor: grab;
+    margin: 0 20px; 
+}
+
+#logo:hover {
+    transform: scale(1.02); /* Slightly enlarges the image */
+    cursor: grab;
+}
+
+
+form {
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+input[type="email"], input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical; /* Allows the user to resize the textarea vertically */
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 916px;
+    width: calc(100% - 20px)
+}
+
+
+.proj {
+
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1 px solid rgba (255, 255, 255, 0.1);
+    cursor: pointer;
+    height: 260px;
+    width: 300px;
+
+}
+
+.card::before {
+    background: radial-gradient(800px circle at 100px 100px, rgba(255, 255, 255, 0.06));
+    border-radius: inherit;
+    content: "";
+    position: absolute;
+    height: 100;
+    left: 0px;
+    width: 100;
+    top: 0px;
+    position: relative;
+    z-index: 2;
+
+
+}
