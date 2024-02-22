@@ -213,15 +213,27 @@ textarea {
 
 
 .proj {
-
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    border: 1 px solid rgba (255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Adjusted border declaration */
     cursor: pointer;
     height: 260px;
     width: 300px;
-
+    padding: 20px; /* Add padding inside each project box */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    overflow: hidden; /* Prevent overflow */
 }
+
+.proj h4 {
+    margin-top: 0; /* Remove top margin from the title */
+}
+
+.proj p {
+    margin-bottom: 0; /* Remove bottom margin from the paragraph */
+}
+
 
 .card::before {
     background: radial-gradient(800px circle at 100px 100px, rgba(255, 255, 255, 0.06));
