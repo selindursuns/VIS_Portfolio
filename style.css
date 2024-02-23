@@ -206,7 +206,7 @@ textarea {
 #projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 20px;
     max-width: 916px;
     width: calc(100% - 20px)
 }
@@ -214,9 +214,8 @@ textarea {
 
 .proj {
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Adjusted border declaration */
-    cursor: pointer;
+    border-radius: 20px;
+    /* border: 1px solid rgba(255, 255, 255, 0.1);  */
     height: 260px;
     width: 300px;
     padding: 20px; /* Add padding inside each project box */
@@ -224,7 +223,16 @@ textarea {
     flex-direction: column; /* Stack items vertically */
     justify-content: space-between; /* Distribute space between items */
     overflow: hidden; /* Prevent overflow */
+    cursor: url(cursor.png); /* Change to cursor: url('path/to/circle-cursor.png'), auto; if you have a custom circle cursor */
+    background-image: linear-gradient(135deg, #e0e6d9 10%, #422e6e 100%); /* Example gradient */
+    transition: background-image 0.5s ease-in-out, transform 0.3s ease-in-out; 
 }
+
+.proj:hover {
+    background-image: linear-gradient(135deg, #e0e6d9 10%, #3c08b6 100%);
+    transform: scale(1.05); /* Slightly enlarges the div */
+}
+
 
 .proj h4 {
     margin-top: 0; /* Remove top margin from the title */
