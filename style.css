@@ -257,3 +257,15 @@ textarea {
 
 
 }
+
+/* If you're using an external CSS file, make sure the link to the file is correct in your HTML */
+.responsive-image-1 {
+    width: 100%; /* This will make the image responsive, adjusting to the width of its container */
+    max-width: 800px; /* This will set the maximum width the image can stretch to */
+    height: auto; /* This will maintain the aspect ratio of the image */
+}
+
+mark { 
+    background-color: green;
+    color: white;
+  }
