@@ -206,8 +206,8 @@ textarea {
 #projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    max-width: 916px;
+    gap: 40px;
+    max-width: 816px;
     width: calc(100% - 20px)
 }
 
@@ -223,7 +223,7 @@ textarea {
     flex-direction: column; /* Stack items vertically */
     justify-content: space-between; /* Distribute space between items */
     overflow: hidden; /* Prevent overflow */
-    cursor: url(cursor.png); /* Change to cursor: url('path/to/circle-cursor.png'), auto; if you have a custom circle cursor */
+    cursor: url(../images/cursor.png); /* Change to cursor: url('path/to/circle-cursor.png'), auto; if you have a custom circle cursor */
     background-image: linear-gradient(135deg, #e0e6d9 10%, #422e6e 100%); /* Example gradient */
     transition: background-image 0.5s ease-in-out, transform 0.3s ease-in-out; 
 }
@@ -261,7 +261,7 @@ textarea {
 /* If you're using an external CSS file, make sure the link to the file is correct in your HTML */
 .responsive-image-1 {
     width: 100%; /* This will make the image responsive, adjusting to the width of its container */
-    max-width: 800px; /* This will set the maximum width the image can stretch to */
+    max-width: 900px; /* This will set the maximum width the image can stretch to */
     height: auto; /* This will maintain the aspect ratio of the image */
 }
 
@@ -269,3 +269,90 @@ mark {
     background-color: green;
     color: white;
   }
+
+  /* Timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.containerss {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 70%;
+}
+/* Containers around each timeline item */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 70%;
+}
+
+/* The lines */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    background-color: rgb(85, 9, 227);
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 20px;
+}
+
+/* Left containers */
+.left {
+    left: 0;
+}
+
+/* Right containers */
+.right {
+    left: 50%;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.year {
+
+    color:#3c08b6;
+    position: relative;
+    border-radius: 1px;
+    font-size: 16px;
+
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Align the left containers to the left */
+  .left {
+    left: 0%;
+  }
+
+  /* Align the right containers to the left (below the left containers) */
+  .right {
+    left: 0%;
+  }
+}
