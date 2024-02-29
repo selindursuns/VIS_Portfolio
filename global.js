@@ -68,8 +68,7 @@ selectElement.addEventListener('change', function(event) {
 });
 
 function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme); // Use data-theme to override CSS variables for dark/light mode
-    // Set CSS custom properties based on theme
+    document.documentElement.setAttribute('data-theme', theme); 
     const root = document.documentElement;
     const themeValues = getThemeValues(theme);
     Object.keys(themeValues).forEach(key => {
