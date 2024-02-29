@@ -4,14 +4,14 @@ function $$ (selector, context = document) {
     return Array.from(context.querySelectorAll(selector));
 }
 
-let pages = [
-    { url: "index.html", title: "Home" },
-    { url: "projects/index.html", title: "Projects" },
-    { url: "projects/project-1.html", title: "Project1" },
-    { url: "projects/project-2.html", title: "Project2" },
-    { url: "cv/index.html", title: "CV" },
-    { url: "contact/index.html", title: "Contact" },
-];
+// let pages = [
+//     { url: "index.html", title: "Home" },
+//     { url: "projects/index.html", title: "Projects" },
+//     { url: "projects/project-1.html", title: "Project1" },
+//     { url: "projects/project-2.html", title: "Project2" },
+//     { url: "cv/index.html", title: "CV" },
+//     { url: "contact/index.html", title: "Contact" },
+// ];
 
 const ARE_WE_HOME = document.documentElement.classList.contains("home");
 
