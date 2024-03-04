@@ -184,9 +184,10 @@ textarea {
     flex-wrap: wrap;
     gap: 40px;
     max-width: 816px;
-    width: calc(100% - 20px)
+    width: calc(100% - 20px);
+    align-items:center;
+    justify-content: space-around;
 }
-
 
 .proj {
     background-color: rgba(0, 0, 0, 0.1);
